@@ -9,8 +9,7 @@
 project = 'HIT-SCC'
 copyright = '2024, HIT-SCC Team'
 author = 'HIT-SCC Team'
-release = 'v1.0'
-html_theme = "alabaster"
+release = 'v0.1'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
