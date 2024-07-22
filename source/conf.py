@@ -11,10 +11,6 @@ copyright = '2024, HIT-SCC Team'
 author = 'HIT-SCC Team'
 release = 'v1.0'
 html_theme = "classic"
-html_theme_options = {
-    "rightsidebar": "true",
-    "relbarbgcolor": "black"
-}
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
