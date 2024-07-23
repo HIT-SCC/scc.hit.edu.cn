@@ -29,8 +29,7 @@ html_theme_options = {
     "font": {"text": "Roboto", "code": "Roboto Mono"},  # 示例选项，根据文档调整
     "plugins": ["sphinx_immaterial"],  # 示例选项，根据文档调整
     "icon": {"repo": "fontawesome/brands/github"},  # 示例选项，根据文档调整
-    "repo_url": "https://github.com/your/repo",  # 示例选项，根据文档调整
-    "edit_uri": "edit/main/docs",  # 示例选项，根据文档调整
+    "repo_url": "https://github.com/HIT-SCC/scc.hit.edu.cn/",  # 示例选项，根据文档调整
     "toc_title": "Table of Contents",  # 示例选项，根据文档调整
     "toc_title_is_page_title": True,  # 示例选项，根据文档调整
 }
