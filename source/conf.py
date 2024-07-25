@@ -21,7 +21,7 @@ extensions = []
 templates_path = ['_templates']
 exclude_patterns = []
 
-html_theme = 'classic'
+html_theme = 'furo'
 
 # html_theme_options = {
 #     # 主题的其他配置选项
