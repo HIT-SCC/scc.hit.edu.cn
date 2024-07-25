@@ -16,12 +16,12 @@ release = 'v0.1'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ["sphinx_immaterial"]
+extensions = []
 
 templates_path = ['_templates']
 exclude_patterns = []
 
-html_theme = 'sphinx_immaterial'
+html_theme = 'furo'
 
 # html_theme_options = {
 #     # 主题的其他配置选项
