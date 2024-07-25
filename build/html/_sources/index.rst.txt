@@ -16,3 +16,4 @@ documentation for details.
    :caption: Contents:
 
    module1/test
+   module2/test
