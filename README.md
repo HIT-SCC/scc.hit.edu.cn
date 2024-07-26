@@ -8,3 +8,7 @@
 * 创建source/subdir_name/xxx.rst
 * 在source/index.rst文件中添加子目录的相对路径(具体可查看index.rst中实例)
 * 子子目录即在source/subdir_name/xxx.rst中添加子子目录的路径(套娃操作)
+
+## 注意
+请在docs文件夹内创建.nojekyll文件！！！！(非常重要)
+请先将测试内容推送到master分支，通过gitpage渲染后检查没有问题，再推送到publish稳定分支并更新gitpage分支位置
