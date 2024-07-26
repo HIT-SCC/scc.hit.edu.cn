@@ -13,3 +13,12 @@
 * 请在docs文件夹内创建.nojekyll文件！！！！(非常重要)
 * 请先将测试内容推送到master分支，通过gitpage渲染后检查没有问题，再推送到publish稳定分支并更新gitpage分支位置
 * 如果通过git clone到本地进行开发记得在source文件夹下创建_static和_templates两个文件夹后再进行make html
+
+```
+$ make clean
+$ make html
+$ rm -rf docs/*
+$ touch docs/.nojekyll
+$ cp -r build/html/*
+```
+
