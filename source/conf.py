@@ -6,7 +6,6 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-import sphinx_immaterial
 
 project = 'HIT-SCC'
 copyright = '2024, HIT-SCC Team'
