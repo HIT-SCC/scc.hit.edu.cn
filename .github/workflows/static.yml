@@ -31,13 +31,29 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      
+      # Ensure node is installed if you are building a static site using tools like Jekyll, Hugo, etc.
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+      
+      # If using a static site generator, build your site here
+      - name: Build Site
+        run: |
+          npm install
+          npm run build
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
-          path: './docs'
+          path: './docs' # Ensure this is the correct path to your static files
+      
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
