@@ -15,10 +15,14 @@
 * 如果通过git clone到本地进行开发记得在source文件夹下创建_static和_templates两个文件夹后再进行make html
 
 ```
+$ cd source
+$ mkdir _static
+$ mkdir _templates
+$ cd ..
 $ make clean
 $ make html
 $ rm -rf docs/*
 $ touch docs/.nojekyll
-$ cp -r build/html/*
+$ cp -r build/html/* docs/
 ```
 
