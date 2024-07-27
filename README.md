@@ -38,7 +38,7 @@ $ cp -r build/html/* docs/
 
 `GitHub Desktop`：[Download GitHub Desktop | GitHub Desktop](https://desktop.github.com/download/)
 
-`Typora`使用破解版，提供阿里云盘链接：https://www.alipan.com/s/scBVDTNhKJ7   提取码：w6d0
+`Typora`：提供阿里云盘链接：https://www.alipan.com/s/scBVDTNhKJ7   提取码：w6d0
 
 `Pandoc`：[Pandoc - Installing pandoc](https://pandoc.org/installing.html)   提供阿里云盘链接：https://www.alipan.com/s/scBVDTNhKJ7   提取码：w6d0
 
