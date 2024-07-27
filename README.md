@@ -116,6 +116,7 @@ pip install furo -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
 3. 尝试运行一次编译：
 
    ```powershell
+   init.bat		//第一次运行需要运行一次(在source下创建两个文件夹)
    make clean
    make html
    ```
