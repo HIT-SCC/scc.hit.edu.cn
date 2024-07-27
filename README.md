@@ -68,6 +68,7 @@ $ cp -r build/html/* docs/
 
 ```powershell
 conda create --name new_environment_name --file env.tar
+pip install furo -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
 #[环境压缩包见上面网盘链接]
 ```
 
