@@ -1,0 +1,1 @@
+make clean && make html && rm -rf ./docs && cp -r ./build/html ./docs && echo > docs/.nojekyll
