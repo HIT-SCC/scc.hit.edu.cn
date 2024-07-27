@@ -99,7 +99,19 @@ pip install furo -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
 
 2. 进入工作目录下，第一层级目录有如下文件结构：
 
-   ![image-20240726100303021](README/image-20240726100303021.png)
+   ```
+   Mode                 LastWriteTime         Length Name
+   ----                 -------------         ------ ----
+   d-----         2024/7/27     21:47                build
+   da----         2024/7/27     21:47                docs
+   d-----         2024/7/27     21:47                source
+   -a----         2024/7/27     21:47             54 init.bat
+   -a----         2024/7/27     21:46            804 make.bat
+   -a----         2024/7/27     21:46            658 Makefile
+   -a----         2024/7/27     21:55           4581 README.md
+   -a----         2024/7/27     21:10            108 run.bat
+   -a----         2024/7/27     21:10             94 run.sh
+   ```
 
 3. 尝试运行一次编译：
 
