@@ -17,3 +17,4 @@ documentation for details.
 
    module1/test
    module2/test
+   HPC_RoadMap/index
