@@ -13,8 +13,18 @@ documentation for details.
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :hidden:
 
    module1/test
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+
    module2/test
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   
    HPC_RoadMap/index
