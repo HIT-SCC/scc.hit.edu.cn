@@ -1,0 +1,1 @@
+mkdir "./source/_static" && mkdir "./source/_template"
