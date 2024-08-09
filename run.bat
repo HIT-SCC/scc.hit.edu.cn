@@ -1,1 +1,1 @@
-make clean && make html && rmdir /s /q "./docs" && xcopy "./build/html" "./docs" /E && echo > docs/.nojekyllconda
+make clean && make html && rmdir /s /q "./docs" && xcopy "./build/html" "./docs" /E && echo > docs/.nojekyll
