@@ -28,3 +28,9 @@ documentation for details.
    :hidden:
    
    HPC_RoadMap/index
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   
+   mod3/pcam
