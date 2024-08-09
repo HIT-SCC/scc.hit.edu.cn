@@ -1,41 +1,125 @@
-=====================
-高性能计算学习路线
-=====================
+.. _header-n0:
 
-**学习路线(to be continued)**
---------------------------------
+并行计算基础
+============
 
+.. _header-n2:
 
-**并行编程**
-~~~~~~~~~~~~~~~~~~
-- **课程简介** 
+什么是并行计算
+--------------
 
-这门课程将带你深入理解现代并行计算的模型和方法。课程涵盖科学应用中的并行性概述，以及线性代数、粒子计算、网格计算、排序、FFT、图算法和机器学习等领域的并行算法研究。同时，课程还将介绍各种并行计算机及其结构，包括共享内存和分布式内存的并行计算机、GPU 和云平台。你将学习并行编程语言、编译器、库和工具箱的使用，数据分区技术以及同步和负载平衡的技巧。课程还会对中型应用程序进行详细研究和算法/程序开发。
+.. image:: /images/mod_yuhy/pcam/image-20240809154342495.png
+   :align: center
 
-总的来讲是对并行算法和并行编程比较全面的介绍。
+.. _header-n4:
 
-- **课程资源**
+应用领域
+--------
 
-`cs267-UCB(C/C++) <https://www2.eecs.berkeley.edu/Courses/CSC267/>`_
+计算气动声学、流体力学、电磁学；生物基因领域；机器学习；数字媒体；气象领域；天文物理；油气模拟等。
 
-**并发编程**
-~~~~~~~~~~~~~~~~~~
+.. _header-n6:
 
-- **课程简介**
+并行计算机体系结构
+------------------
 
-**前置要求**:rust语言(可参照以下链接)
+|image2|
 
-`Rust语言圣经(Rust Course) <https://course.rs/about-book.html>`_
+.. _header-n8:
 
-- **课程资源**
+并行程序设计基础
+----------------
 
-`cs431-kaist(Rust) <https://github.com/kaist-cp/cs431>`_
+.. _header-n9:
 
+串行算法并行化
+~~~~~~~~~~~~~~
 
+.. _header-n10:
 
+例1.求和方法进行数值积分
+^^^^^^^^^^^^^^^^^^^^^^^^
 
-学术社区
-~~~~~~~~~~~~~~~~~~
-- MICRO、ISCA、ASPLOS和HPCA等四个CCF A类会议并称计算机体系结构领域的四大国际学术会议。MICRO是四大会议中历史最悠久的。自1968年创办以来，55届MICRO会议总共收录论文1900余篇。
-- 历史上，中国大陆机构仅有两次获得四大会议的最佳论文奖（十年前），分别是ASPLOS 2014（DianNao）和MICRO 2014（DaDianNao），都是由中科院计算所智能处理器团队获得。
-- 相信后人的智慧（）
+.. math:: \int f(x) \approx \sum_{i=0}^{N-1} \left(b-a\right) f\left(\frac{i(b-a)}{N} + a + 0.5\right),
+
+|image3|
+
+.. _header-n13:
+
+例2.Floyd并行算法
+^^^^^^^^^^^^^^^^^
+
+分块思想，参考\ `求最短路径Floyd算法的并行化（解APSP问题）-CSDN博客 <https://blog.csdn.net/kissgoodbye2012/article/details/107499354>`__
+
+.. _header-n27:
+
+从问题描述开始设计并行算法
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+|image4|
+
+.. _header-n40:
+
+借用已有算法求解新问题
+~~~~~~~~~~~~~~~~~~~~~~
+
+|image5|
+
+.. _header-n45:
+
+并行程序性能评价
+----------------
+
+.. _header-n47:
+
+加速比
+~~~~~~
+
+|image6|
+
+.. _header-n49:
+
+Amdahl定律
+~~~~~~~~~~
+
+|  Amdahl定律定义了串行程序并行化后加速比计
+| 算公式与理论上限。
+
+f 表示程序中不可以被并行化的部分所占的比例。
+
+|image7|
+
+.. _header-n58:
+
+Gustafson定律
+~~~~~~~~~~~~~
+
+|  研究在给定的时间内用不同数目的处理器能够完
+| 成多大的计算量是并行计算中一个很实际的问题。
+
+|image8|
+
+.. _header-n69:
+
+时间复杂度
+~~~~~~~~~~
+
+|image9|
+
+.. _header-n71:
+
+示例
+^^^^
+
+|image10|
+
+.. |image1| image:: /images/mod_yuhy/pcam/image-20240809154342495.png
+.. |image2| image:: /images/mod_yuhy/pcam/image-20240809155102575.png
+.. |image3| image:: /images/mod_yuhy/pcam/image-20240809161552338.png
+.. |image4| image:: /images/mod_yuhy/pcam/image-20240809192512773.png
+.. |image5| image:: /images/mod_yuhy/pcam/image-20240809193553135.png
+.. |image6| image:: /images/mod_yuhy/pcam/image-20240809194543692.png
+.. |image7| image:: /images/mod_yuhy/pcam/image-20240809194628969.png
+.. |image8| image:: /images/mod_yuhy/pcam/image-20240809195002246.png
+.. |image9| image:: /images/mod_yuhy/pcam/image-20240809195209755.png
+.. |image10| image:: /images/mod_yuhy/pcam/image-20240809195232456.png

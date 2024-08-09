@@ -6,7 +6,7 @@
 <link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="prev" title="高性能计算学习路线" href="../HPC_RoadMap/index.html" />
 
     <!-- Generated with Sphinx 8.0.2 and Furo 2024.08.06 -->
-        <title>高性能计算学习路线 - HIT-SCC v0.1 documentation</title>
+        <title>并行计算基础 - HIT-SCC v0.1 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=354aac6f" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=302659d7" />
@@ -208,7 +208,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../HPC_RoadMap/index.html">高性能计算学习路线</a></li>
 </ul>
 <ul class="current">
-<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">高性能计算学习路线</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">并行计算基础</a></li>
 </ul>
 
 </div>
@@ -249,41 +249,80 @@
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <section id="id1">
-<h1>高性能计算学习路线<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
-<section id="to-be-continued">
-<h2><strong>学习路线(to be continued)</strong><a class="headerlink" href="#to-be-continued" title="Link to this heading">¶</a></h2>
-<section id="id2">
-<h3><strong>并行编程</strong><a class="headerlink" href="#id2" title="Link to this heading">¶</a></h3>
-<ul class="simple">
-<li><p><strong>课程简介</strong></p></li>
-</ul>
-<p>这门课程将带你深入理解现代并行计算的模型和方法。课程涵盖科学应用中的并行性概述，以及线性代数、粒子计算、网格计算、排序、FFT、图算法和机器学习等领域的并行算法研究。同时，课程还将介绍各种并行计算机及其结构，包括共享内存和分布式内存的并行计算机、GPU 和云平台。你将学习并行编程语言、编译器、库和工具箱的使用，数据分区技术以及同步和负载平衡的技巧。课程还会对中型应用程序进行详细研究和算法/程序开发。</p>
-<p>总的来讲是对并行算法和并行编程比较全面的介绍。</p>
-<ul class="simple">
-<li><p><strong>课程资源</strong></p></li>
-</ul>
-<p><a class="reference external" href="https://www2.eecs.berkeley.edu/Courses/CSC267/">cs267-UCB(C/C++)</a></p>
+          <section id="header-n0">
+<span id="id1"></span><h1>并行计算基础<a class="headerlink" href="#header-n0" title="Link to this heading">¶</a></h1>
+<section id="header-n2">
+<span id="id2"></span><h2>什么是并行计算<a class="headerlink" href="#header-n2" title="Link to this heading">¶</a></h2>
+<img alt="../_images/image-20240809154342495.png" class="align-center" src="../_images/image-20240809154342495.png" />
 </section>
-<section id="id3">
-<h3><strong>并发编程</strong><a class="headerlink" href="#id3" title="Link to this heading">¶</a></h3>
-<ul class="simple">
-<li><p><strong>课程简介</strong></p></li>
-</ul>
-<p><strong>前置要求</strong>:rust语言(可参照以下链接)</p>
-<p><a class="reference external" href="https://course.rs/about-book.html">Rust语言圣经(Rust Course)</a></p>
-<ul class="simple">
-<li><p><strong>课程资源</strong></p></li>
-</ul>
-<p><a class="reference external" href="https://github.com/kaist-cp/cs431">cs431-kaist(Rust)</a></p>
+<section id="header-n4">
+<span id="id3"></span><h2>应用领域<a class="headerlink" href="#header-n4" title="Link to this heading">¶</a></h2>
+<p>计算气动声学、流体力学、电磁学；生物基因领域；机器学习；数字媒体；气象领域；天文物理；油气模拟等。</p>
 </section>
-<section id="id4">
-<h3>学术社区<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
-<ul class="simple">
-<li><p>MICRO、ISCA、ASPLOS和HPCA等四个CCF A类会议并称计算机体系结构领域的四大国际学术会议。MICRO是四大会议中历史最悠久的。自1968年创办以来，55届MICRO会议总共收录论文1900余篇。</p></li>
-<li><p>历史上，中国大陆机构仅有两次获得四大会议的最佳论文奖（十年前），分别是ASPLOS 2014（DianNao）和MICRO 2014（DaDianNao），都是由中科院计算所智能处理器团队获得。</p></li>
-<li><p>相信后人的智慧（）</p></li>
-</ul>
+<section id="header-n6">
+<span id="id4"></span><h2>并行计算机体系结构<a class="headerlink" href="#header-n6" title="Link to this heading">¶</a></h2>
+<p><img alt="image2" src="../_images/image-20240809155102575.png" /></p>
+</section>
+<section id="header-n8">
+<span id="id5"></span><h2>并行程序设计基础<a class="headerlink" href="#header-n8" title="Link to this heading">¶</a></h2>
+<section id="header-n9">
+<span id="id6"></span><h3>串行算法并行化<a class="headerlink" href="#header-n9" title="Link to this heading">¶</a></h3>
+<section id="header-n10">
+<span id="id7"></span><h4>例1.求和方法进行数值积分<a class="headerlink" href="#header-n10" title="Link to this heading">¶</a></h4>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\int f(x) \approx \sum_{i=0}^{N-1} \left(b-a\right) f\left(\frac{i(b-a)}{N} + a + 0.5\right),\]</div>
+</div>
+<p><img alt="image3" src="../_images/image-20240809161552338.png" /></p>
+</section>
+<section id="floyd">
+<span id="header-n13"></span><h4>例2.Floyd并行算法<a class="headerlink" href="#floyd" title="Link to this heading">¶</a></h4>
+<p>分块思想，参考<a class="reference external" href="https://blog.csdn.net/kissgoodbye2012/article/details/107499354">求最短路径Floyd算法的并行化（解APSP问题）-CSDN博客</a></p>
+</section>
+</section>
+<section id="header-n27">
+<span id="id8"></span><h3>从问题描述开始设计并行算法<a class="headerlink" href="#header-n27" title="Link to this heading">¶</a></h3>
+<p><img alt="image4" src="../_images/image-20240809192512773.png" /></p>
+</section>
+<section id="header-n40">
+<span id="id9"></span><h3>借用已有算法求解新问题<a class="headerlink" href="#header-n40" title="Link to this heading">¶</a></h3>
+<p><img alt="image5" src="../_images/image-20240809193553135.png" /></p>
+</section>
+</section>
+<section id="header-n45">
+<span id="id10"></span><h2>并行程序性能评价<a class="headerlink" href="#header-n45" title="Link to this heading">¶</a></h2>
+<section id="header-n47">
+<span id="id11"></span><h3>加速比<a class="headerlink" href="#header-n47" title="Link to this heading">¶</a></h3>
+<p><img alt="image6" src="../_images/image-20240809194543692.png" /></p>
+</section>
+<section id="amdahl">
+<span id="header-n49"></span><h3>Amdahl定律<a class="headerlink" href="#amdahl" title="Link to this heading">¶</a></h3>
+<div class="line-block">
+<div class="line-block">
+<div class="line">Amdahl定律定义了串行程序并行化后加速比计</div>
+</div>
+<div class="line">算公式与理论上限。</div>
+</div>
+<p>f 表示程序中不可以被并行化的部分所占的比例。</p>
+<p><img alt="image7" src="../_images/image-20240809194628969.png" /></p>
+</section>
+<section id="gustafson">
+<span id="header-n58"></span><h3>Gustafson定律<a class="headerlink" href="#gustafson" title="Link to this heading">¶</a></h3>
+<div class="line-block">
+<div class="line-block">
+<div class="line">研究在给定的时间内用不同数目的处理器能够完</div>
+</div>
+<div class="line">成多大的计算量是并行计算中一个很实际的问题。</div>
+</div>
+<p><img alt="image8" src="../_images/image-20240809195002246.png" /></p>
+</section>
+<section id="header-n69">
+<span id="id12"></span><h3>时间复杂度<a class="headerlink" href="#header-n69" title="Link to this heading">¶</a></h3>
+<p><img alt="image9" src="../_images/image-20240809195209755.png" /></p>
+<section id="header-n71">
+<span id="id13"></span><h4>示例<a class="headerlink" href="#header-n71" title="Link to this heading">¶</a></h4>
+<p><img alt="image10" src="../_images/image-20240809195232456.png" /></p>
+</section>
 </section>
 </section>
 </section>
@@ -335,11 +374,28 @@
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">高性能计算学习路线</a><ul>
-<li><a class="reference internal" href="#to-be-continued"><strong>学习路线(to be continued)</strong></a><ul>
-<li><a class="reference internal" href="#id2"><strong>并行编程</strong></a></li>
-<li><a class="reference internal" href="#id3"><strong>并发编程</strong></a></li>
-<li><a class="reference internal" href="#id4">学术社区</a></li>
+<li><a class="reference internal" href="#">并行计算基础</a><ul>
+<li><a class="reference internal" href="#header-n2">什么是并行计算</a></li>
+<li><a class="reference internal" href="#header-n4">应用领域</a></li>
+<li><a class="reference internal" href="#header-n6">并行计算机体系结构</a></li>
+<li><a class="reference internal" href="#header-n8">并行程序设计基础</a><ul>
+<li><a class="reference internal" href="#header-n9">串行算法并行化</a><ul>
+<li><a class="reference internal" href="#header-n10">例1.求和方法进行数值积分</a></li>
+<li><a class="reference internal" href="#floyd">例2.Floyd并行算法</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#header-n27">从问题描述开始设计并行算法</a></li>
+<li><a class="reference internal" href="#header-n40">借用已有算法求解新问题</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#header-n45">并行程序性能评价</a><ul>
+<li><a class="reference internal" href="#header-n47">加速比</a></li>
+<li><a class="reference internal" href="#amdahl">Amdahl定律</a></li>
+<li><a class="reference internal" href="#gustafson">Gustafson定律</a></li>
+<li><a class="reference internal" href="#header-n69">时间复杂度</a><ul>
+<li><a class="reference internal" href="#header-n71">示例</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -357,5 +413,6 @@
     <script src="../_static/doctools.js?v=9a2dae69"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/scripts/furo.js?v=5fa4622c"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     </body>
 </html>
