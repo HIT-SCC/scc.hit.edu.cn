@@ -15,7 +15,7 @@ documentation for details.
    :maxdepth: 2
    :hidden:
 
-   module1/test
+   ASC&PAC/main
 
 .. toctree::
    :maxdepth: 2
