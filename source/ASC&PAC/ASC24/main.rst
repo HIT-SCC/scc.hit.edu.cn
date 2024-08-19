@@ -6,3 +6,4 @@ ASC2024
    :hidden:
 
    ./ASC24赛题
+   ./ASC24 Preliminary Round Notification.pdf
