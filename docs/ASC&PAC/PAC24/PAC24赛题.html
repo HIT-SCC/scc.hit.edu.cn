@@ -277,6 +277,7 @@
 <p>WINOGRAD是一种快速的卷积算法(备注1，2)。起源于1980年，是Shmuel
 Winograd提出用来减少FIR滤波器计算量的一个算法。通过增加加法操作来降低卷积算法中的乘法操作。若是采用直接按滑动窗口方式计算卷积，一维时需要𝑚×𝑟次乘法，二维时需要m×n×r×s次乘法。而采用WINOGRAD算法：其乘法数量减少到m+r−1或(m+r−1)(n+s−1)。远大于上面计算的最少乘法次数。从而提高性能。该算法自提出后，首先应用于人工智能相关领域。后来在传统的高性能计算中也被使用。</p>
 <p>WINOGRAD算法伪代码如下：</p>
+<img alt="../../_images/image-20240819110444751.png" class="align-center" src="../../_images/image-20240819110444751.png" />
 <p>本赛题为1D的WINOGRAD算法。其Sample
 Code为2x3的实现。多线程版本。硬件平台华为鲲鹏920高性能芯片，单个芯片64个物理核。其指令集为ARM指令集。本赛题评判的是WINOGRAD在基于鲲鹏920高性能芯片的两路服务器上的性能
 GFLOPS。具体规则如下。</p>
@@ -299,7 +300,9 @@ WINOGRAD实现代码），<code class="docutils literal notranslate"><span class
 <p>……</p>
 <p>第N+1行：Channel Height Weight Filter Batch</p>
 <p>卷积示意图：</p>
+<img alt="../../_images/image-20240819111405930.png" class="align-center" src="../../_images/image-20240819111405930.png" />
 <p>输出结果实例：</p>
+<img alt="../../_images/image-20240819111426334.png" class="align-center" src="../../_images/image-20240819111426334.png" />
 <p>4.校验：<code class="docutils literal notranslate"><span class="pre">./winograd</span></code> &lt;输入文件&gt; 1</p>
 <p>输入文件：<code class="docutils literal notranslate"><span class="pre">small.conf</span></code></p>
 <p>5.算例说明：输入文件<code class="docutils literal notranslate"><span class="pre">small.conf</span></code>用于优化调试，可自由修改。组委会<strong>提前一天发布最终计入成绩的输入文件</strong>。</p>
@@ -334,6 +337,7 @@ time”给出总体GFLOPS，GFLOPS越高越好。</p>
 <span id="id5"></span><h4>[简介]：<a class="headerlink" href="#header-n61" title="Link to this heading">¶</a></h4>
 <p><code class="docutils literal notranslate"><span class="pre">CPUBench</span></code>作为一款开放的通用计算CPU性能评测基准工具，其测试负载来源于HPC、大数据，数据库等常用通用计算领域的典型业务场景，定位于对通用计算场景下的CPU、内存子系统以及所依赖的编译器进行综合计算能力评估。</p>
 <p>其中浮点型套件（<code class="docutils literal notranslate"><span class="pre">FloatConcurrent</span></code>）包含10个负载，设计制造、气象、基因、物理化学等典型科学计算领域，如下表所示：</p>
+<img alt="../../_images/image-20240819111622456.png" class="align-center" src="../../_images/image-20240819111622456.png" />
 </section>
 <section id="header-n65">
 <span id="id6"></span><h4>[赛题要求]：<a class="headerlink" href="#header-n65" title="Link to this heading">¶</a></h4>

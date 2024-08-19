@@ -32,6 +32,9 @@ Winograd提出用来减少FIR滤波器计算量的一个算法。通过增加加
 
 WINOGRAD算法伪代码如下：
 
+.. image:: /images/ASC_PAC/PAC24/image-20240819110444751.png
+   :align: center
+
 本赛题为1D的WINOGRAD算法。其Sample
 Code为2x3的实现。多线程版本。硬件平台华为鲲鹏920高性能芯片，单个芯片64个物理核。其指令集为ARM指令集。本赛题评判的是WINOGRAD在基于鲲鹏920高性能芯片的两路服务器上的性能
 GFLOPS。具体规则如下。
@@ -72,7 +75,13 @@ conf 文件格式：
 
 卷积示意图：
 
+.. image:: /images/ASC_PAC/PAC24/image-20240819111405930.png
+   :align: center
+
 输出结果实例：
+
+.. image:: /images/ASC_PAC/PAC24/image-20240819111426334.png
+   :align: center
 
 4.校验：\ ``./winograd`` <输入文件> 1
 
@@ -126,6 +135,9 @@ time”给出总体GFLOPS，GFLOPS越高越好。
 ``CPUBench``\ 作为一款开放的通用计算CPU性能评测基准工具，其测试负载来源于HPC、大数据，数据库等常用通用计算领域的典型业务场景，定位于对通用计算场景下的CPU、内存子系统以及所依赖的编译器进行综合计算能力评估。
 
 其中浮点型套件（\ ``FloatConcurrent``\ ）包含10个负载，设计制造、气象、基因、物理化学等典型科学计算领域，如下表所示：
+
+.. image:: /images/ASC_PAC/PAC24/image-20240819111622456.png
+   :align: center
 
 .. _header-n65:
 
