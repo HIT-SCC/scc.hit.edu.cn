@@ -81,7 +81,7 @@ Part3.1 设计HPC系统：
 
 .. _header-n242:
 
-Part3.2 HPC&HPCG:
+Part3.2 HPL&HPCG:
 ^^^^^^^^^^^^^^^^^
 
 **[任务简述]：**
