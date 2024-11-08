@@ -2,7 +2,7 @@
 高性能计算学习路线
 =====================
 
-**学习路线(to be continued)**
+**学习路线**
 --------------------------------
 
 
@@ -53,6 +53,40 @@
 `MIT6.172(C) <https://ocw.mit.edu/courses/6-172-performance-engineering-of-software-systems-fall-2018/>`_
 
 
+**开源项目（copy from Hongyu Zhang）**
+~~~~~~~~~~~~~~
+
+算法导论的习题解答：https://github.com/walkccc/CLRS
+
+CSAPP的习题解答：https://github.com/DreamAndDead/CSAPP-3e-Solutions
+
+数值分析算法的实现：https://github.com/lonelyprince7/NumericalAnalysis
+
+Nvidia的CUDA优化官方样例：https://github.com/NVIDIA/cuda-samples
+
+MIT 6.828的Lab：https://github.com/SmallPond/MIT6.828_OS
+
+CMU 15-213的Lab：https://github.com/JonnyKong/CMU-15-213-Intro-to-Computer-Systems
+
+2020年的CPC决赛赛题－基于太湖之光平台的通用型网格计算方法：https://github.com/lonelyprince7/Grid-Computing
+
+2020年的CPC初赛赛题－基于太湖之光超算平台与MPI集群的的分布式图BFS算法：https://github.com/lonelyprince7/DistributedBFS
+
+2019年的CPC初赛赛题－基于神威·太湖之光超算平台的模板卷积运算优化：https://github.com/lonelyprince7/Stencil
+
+CUDA矩阵乘法的优秀开源实现：https://github.com/NVIDIA/cutlass
+
+CUDA矩阵分解算法的优秀开源实现：https://github.com/cuMF/cumf_als
+
+基于C++的迷你深度学习框架实现：https://github.com/E1eveNn/xshinnosuke_cpp
+
+基于Intel平台的深度学习算子优化：https://github.com/PasaLab/dolphin
+
+OpenMP实现的一个异步坐标更新算法，想优化深度学习底层架构的同学可以看看：https://github.com/ZhiminPeng/ARock
+
+和上面一样，也是一个分布式优化算法项目：https://github.com/uclaopt/TMAC
+
+
 学术社区
 ~~~~~~~~~~~~~~~~~~
 - MICRO、ISCA、ASPLOS和HPCA等四个CCF A类会议并称计算机体系结构领域的四大国际学术会议。MICRO是四大会议中历史最悠久的。自1968年创办以来，55届MICRO会议总共收录论文1900余篇。
@@ -60,3 +94,10 @@
 - 相信后人的智慧（）
 - 注意：
 - 更新，在2024年内地北京大学与香港科技大学(广州)分别获得2024 ASPLOS最佳论文奖，本次会议共收录文章170篇，录取率为18.4%，共评出6篇最佳论文（占录取论文的3.5%）。
+
+
+**本文作者：** ycy
+
+**联系方式：** chenyuy001@gmail.com
+
+**版权声明：** 欢迎对文章内容进行转载，但请注明出处
