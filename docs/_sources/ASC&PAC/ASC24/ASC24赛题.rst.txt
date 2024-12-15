@@ -6,7 +6,7 @@ ASC24赛题简介
 详细信息可阅读下方原版赛题要求
 
 [官方英文原版赛题要求]：\ `ASC24 Preliminary Round
-Notification.pdf <https://hit-scc.github.io/scc.hit.edu.cn/_pdf/ASC_PAC/ASC24_Preliminary_Round_Notification.pdf>`__
+Notification.pdf <https://hit-scc.github.io/scc.hit.edu.cn/source/ASC&PAC/ASC24/ASC24_Preliminary_Round_Notification.pdf>`__
 
 .. _header-n177:
 
